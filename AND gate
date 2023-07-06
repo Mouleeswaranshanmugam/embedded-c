@@ -1,0 +1,17 @@
+#include<AT89S52.h>
+#define LED P2_2
+#define  SW P3_3
+#define  SW1 P3_5
+void main()
+{
+while(1)
+  {
+       if(SW==0 && SW1==0)
+       {
+           LED=0;
+       }
+       else{
+         LED=1;
+       }
+  }
+} 
